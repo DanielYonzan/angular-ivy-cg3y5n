@@ -1,0 +1,36 @@
+<form [formGroup]="registerForm" (click)="create($event)">
+  <div class="container">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr />
+
+    <label for="email"><b>Email</b></label>
+    <input
+      type="text"
+      placeholder="Enter Email"
+      name="email"
+      id="email"
+      formControlName="email"
+    />
+
+    <label for="psw"><b>Password</b></label>
+    <input
+      type="password"
+      placeholder="Enter Password"
+      name="psw"
+      id="psw"
+      formControlName="password"
+    />
+
+    <label for="psw-repeat"><b>UserName</b></label>
+    <input
+      type="text"
+      placeholder="Enter username"
+      name="username"
+      id="username"
+      formControlName="username"
+    />
+    <hr />
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+</form>
